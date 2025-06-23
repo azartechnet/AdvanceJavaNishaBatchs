@@ -19,7 +19,10 @@ public class Servlet1 extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		PrintWriter out=resp.getWriter();
-		out.println("welcome to the Servlet");
+		String u1=req.getParameter("uname");
+		String p1=req.getParameter("pass");
+		
+		out.println("Your value is::"+u1+""+p1);
 		
 	}
 
