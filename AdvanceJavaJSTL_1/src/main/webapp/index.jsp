@@ -26,7 +26,7 @@
 		</p>
 	</c:if> --%>
 
-	<c:set var="salary" scope="session" value="${2000}" />
+	<%-- <c:set var="salary" scope="session" value="${2000}" />
 	<p>
 		Your salary is:
 		<c:out value="${salary}" />
@@ -38,6 +38,26 @@
 		<c:otherwise>
 			No Comment sir...
 		</c:otherwise>
-	</c:choose>
-</body>
+	</c:choose> --%>
+	
+	<%-- <c:forEach var="i" begin="1" end="5">
+	      Item<c:out value="${i}"/>
+	</c:forEach> --%>
+<%-- 	<c:import var="data" url="https://github.com/azartechnet"/>
+	<c:out value="${data}"/>
+ --%>
+ <h2>Welcome Page</h2>
+ <c:url var="myLink" value="welcome.jsp">
+ <c:param name="name" value="mohamedazar"/>
+ <c:param name="role" value="Trainer"/>
+ </c:url>
+ 
+ <a href="${myLink}">GoTo Welcome Page</a>
+ 
+ 
+ 
+ <c:redirect url="http://www.google.com">
+ 
+ </c:redirect>
+ </body>
 </html>
