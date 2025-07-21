@@ -23,11 +23,15 @@ try
 	
 	if(rs.next())
 	{
-		out.println("LoginSuccess...");
+		/* out.println("LoginSuccess..."); */
+		RequestDispatcher rd=request.getRequestDispatcher("AddEmployee.jsp");
+		rd.forward(request, response);
 	}
 	else
 	{
-		out.println("LoginFail!!!");
+		/* out.println("LoginFail!!!"); */
+		RequestDispatcher rd=request.getRequestDispatcher("error.jsp");
+		rd.include(request, response);
 	}
 }
 catch(Exception t)

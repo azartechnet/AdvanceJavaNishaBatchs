@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>LoginFail!!!</h1>
+<form action="insertvalidate.jsp">
+<label>UserName</label>
+<input type="text" name="name"/>
+<label>Address</label>
+<input type="text" name="address"/>
+<input type="submit" value="Register"/>
+</form>
 </body>
 </html>
