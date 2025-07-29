@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<center>
 <form action="insertvalidate.jsp">
 <label>UserName</label>
 <input type="text" name="name"/>
@@ -14,5 +15,10 @@
 <input type="text" name="address"/>
 <input type="submit" value="Register"/>
 </form>
+</center>
+<center>
+<a href="search.jsp">Search</a>
+<a href="user.jsp">Update</a>
+</center>
 </body>
 </html>
