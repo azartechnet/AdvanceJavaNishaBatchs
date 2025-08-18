@@ -1,0 +1,7 @@
+create table answers763 (questionid integer not null, 
+answers varchar(255) not null, username varchar(255), 
+primary key (questionid, answers));
+
+select * from answers763;
+
+select * from question736;
