@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="r" class="a.Process"></jsp:useBean>
-Record is::<jsp:setProperty property="*" name="r"/>
-<jsp:getProperty property="uname" name="r"/>
-<jsp:getProperty property="pass" name="r"/>
-
+<form action="Page2.jsp">
+Name:<input type="text" name="uname"/>
+<input type="submit" value="click"/>
+</form>
 </body>
 </html>
